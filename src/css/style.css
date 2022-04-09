@@ -109,7 +109,7 @@ body {
 }
 
 .container {
-  max-width: 108.8rem;
+  max-width: 112.2rem;
   padding: 0 1.6rem;
   margin: 0 auto;
 }
@@ -278,6 +278,20 @@ nav {
   max-width: 58rem;
 }
 
-.about-me__photo {
+.about-me__info h1 {
+  margin-bottom: 1rem;
+}
+
+.about-me__info h4 {
+  margin-bottom: 1rem;
+}
+
+.about-me .links__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-me__photo img {
   border-radius: 50%;
 }
