@@ -111,6 +111,7 @@ body {
 .container {
   max-width: 108.8rem;
   padding: 0 1.6rem;
+  margin: 0 auto;
 }
 
 h1 {
@@ -259,4 +260,24 @@ nav {
 .about-me {
   margin-top: 80px;
   padding-top: 80px;
+}
+
+.about-me .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-me__info {
+  max-width: 58rem;
+}
+
+.about-me__photo {
+  border-radius: 50%;
 }
