@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/HunterM7/Portfolio-CV/issues"
   },
-  "homepage": "https://github.com/HunterM7/Portfolio-CV#readme"
+  "homepage": "https://github.com/HunterM7/Portfolio-CV#readme",
+  "dependencies": {
+    "pug": "^3.0.2"
+  }
 }
