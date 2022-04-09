@@ -20,6 +20,8 @@ $transition2s: 0.2s ease
 html
 	font-size: 10px
 
+	overflow: hidden
+
 body
 	font-family: 'Poppins', sans-serif
 	font-size: 1.8rem
@@ -29,6 +31,12 @@ body
 	color: $White
 
 	background: $Gradient
+
+	position: relative
+
+.container
+	max-width: 108.8rem
+	padding: 0 1.6rem
 
 h1
 	font-size: 6.4rem
@@ -78,10 +86,19 @@ p
 
 // Header
 
+header
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	z-index: 100
+
+	width: 100%
+
 .header
-	max-width: 131.2rem
+	max-width: 134.4rem
 	margin: 0 auto
-	padding: 1.65rem 0
+	padding: 1.65rem 1.6rem
 
 	display: flex
 	justify-content: space-between
@@ -98,7 +115,8 @@ p
 		background-repeat: no-repeat
 
 		border-radius: 50%
-
+nav
+	display: block
 .navigation
 	display: flex
 	justify-content: center
@@ -131,5 +149,24 @@ p
 
 	&__link
 		letter-spacing: 0.06rem
+
+@media ( max-width:  768px)
+	.header
+		nav
+			display: none
+
+@media ( max-width:  375px)
+	.header__btn
+		color: $Black
+		border-color: $Black
+
+// ---------------------------------------------
+
+// About me
+.about-me
+	margin-top: 80px
+	padding-top: 80px
+
+	&__info
 
 // ---------------------------------------------

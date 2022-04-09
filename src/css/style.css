@@ -94,6 +94,7 @@ h6 {
 
 html {
   font-size: 10px;
+  overflow: hidden;
 }
 
 body {
@@ -104,6 +105,12 @@ body {
   letter-spacing: 0.1rem;
   color: #FAFAFA;
   background: linear-gradient(135deg, #6C48D3 0%, #4D4DE2 30%, #3778FC 80%, #0370FF 100%);
+  position: relative;
+}
+
+.container {
+  max-width: 108.8rem;
+  padding: 0 1.6rem;
 }
 
 h1 {
@@ -156,10 +163,19 @@ p {
   background-color: #FAFAFA;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  width: 100%;
+}
+
 .header {
-  max-width: 131.2rem;
+  max-width: 134.4rem;
   margin: 0 auto;
-  padding: 1.65rem 0;
+  padding: 1.65rem 1.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,6 +196,10 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 50%;
+}
+
+nav {
+  display: block;
 }
 
 .navigation {
@@ -221,4 +241,22 @@ p {
 
 .navigation__link {
   letter-spacing: 0.06rem;
+}
+
+@media (max-width: 768px) {
+  .header nav {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .header__btn {
+    color: #141C33;
+    border-color: #141C33;
+  }
+}
+
+.about-me {
+  margin-top: 80px;
+  padding-top: 80px;
 }
